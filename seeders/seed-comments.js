@@ -1,6 +1,6 @@
 const db = require('../models')
 
-// In order to use await we need an async function
+// In order to use await we need an async function!
 async function seed() {
     // Get the place, H-Thai-ML
     let place = await db.Place.findOne({ name: 'H-Thai-ML' })
